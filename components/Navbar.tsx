@@ -1,6 +1,7 @@
-import { AppBar, Toolbar, Box, Typography, Button } from "@mui/material"
-import Link from "next/link"
-import { ReactElement } from "react"
+import { AppBar, Toolbar, Box, Typography, Button } from '@mui/material'
+import Image from 'next/image'
+import Link from 'next/link'
+import { ReactElement } from 'react'
 
 const Navbar = (): ReactElement => {
     return (
@@ -17,13 +18,11 @@ const Navbar = (): ReactElement => {
                         flexGrow: 1
                     }}
                 >
-                    <img
-                        src="/images/aaii-vector-nbg.png" // Path to the logo image
+                    <Image
+                        src="/images/aaii-vector-nbg.png"
                         alt="Alloy AI Logo"
-                        style={{
-                            height: '125px', // Adjust logo size as needed
-                            marginRight: '10px', // Adds some space between logo and text
-                        }}
+                        width={150}
+                        height={100}
                     />
                 </Box>
                 <Button component={Link} href="/">
